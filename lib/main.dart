@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-
 import 'pages/home.dart';
+import 'components/bottom_modal_sheet.dart';
 
 void main() {
   runApp(const App());
+  runApp(const BottomSheetApp());
 }
 
 class App extends StatelessWidget {

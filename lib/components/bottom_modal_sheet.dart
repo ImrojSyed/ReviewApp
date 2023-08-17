@@ -35,7 +35,7 @@ class BottomSheetExample extends StatelessWidget {
             context: context,
             builder: (BuildContext context) {
               return SizedBox(
-                height: 200,
+                height: 600,
                 child: Center(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,

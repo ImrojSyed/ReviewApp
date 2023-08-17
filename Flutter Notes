@@ -1,0 +1,45 @@
+# Naming conventions
+
+camelCase   - classes, functions and variables
+snake_case  - files and folders
+kabob-case  - more seen in Python, more prominent in web-development [checks urls or websites], html syntax etc.
+
+# Project 1:
+1) bottom sheet
+2) documentation -> widget catalog https://docs.flutter.dev
+3) buttons and so on find out yourself
+
+Use this for finding all flutter widgets: https://api.flutter.dev/flutter/widgets/widgets-library.html
+
+# Layout:
+1) Row
+2) Column
+3) Grid
+4) List View
+
+# Errors:
+1) Overflow errors: common and showed by (yellow+black) lines. This happens when something is beyond its limits. 
+            To fix it
+            a) either child elements need to be trimmed down or parent elements need to be expanded
+            b) SingleChildScrollView - allow the screen to be scrollable i.e. it gives infinite vertical spacing
+2) Unbounded Layout errors: recognised by screen looking all blanked, "size/height/width is infinite"
+            To fix it
+            a) define a size for the parent widget -->  Size size = MediaQuery.of(context).size 
+                                                        size.width = 0.8 // that is 80% of the width
+            [media query is a class that gives the information about the screen size of the phone]
+            b) use constraints - unbounded constraints https://embrace.io/blog/constraints-in-flutter/
+3) Type errors: data types are wrong 
+            To fix it
+            a) my making the value as the data type required
+            b) or force the data type to be non-nullable by using the '!' sign or by setting default values by using '??' symbols
+4) Design mismatch or Incorrect design: UI does not match the design [P.S.: you are a bad developer]
+            To fix it
+            a) be able to translate the design to implementation
+            b) write clean, maintainable code
+            c) refactor code
+5) Copyright issues: legal issues
+            To fix it
+            a) talk to designer
+            b) pay for the art/license
+            c) free art unsplash.com
+            
